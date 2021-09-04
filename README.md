@@ -1,6 +1,8 @@
 # k3-beaglebone
 # SUSE Rancher Project using k3 on Beaglebone for IoT 
 
+https://dewitt4.github.io/k3-beaglebone/
+
 ## Introduction
 According to Wikipedia, IoT is a network of physical objects or things embedded with electronics, software, sensors, and connectivity. These things interoperate in the existing Internet infrastructure. They achieve greater value and service by exchanging data with the manufacturer, operator, and/or connected devices.
 Beagle Bone is a great IoT device and lightweight K3s make running lightweight Kubernetes on these devices a real possibility.
