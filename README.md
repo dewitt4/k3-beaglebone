@@ -1,5 +1,7 @@
 # k3-beaglebone
-SUSE Rancher Project using k3 on Beaglebone for IoT 
+# SUSE Rancher Project using k3 on Beaglebone for IoT 
+
+## Introduction
 According to Wikipedia, IoT is a network of physical objects or things embedded with electronics, software, sensors, and connectivity. These things interoperate in the existing Internet infrastructure. They achieve greater value and service by exchanging data with the manufacturer, operator, and/or connected devices.
 Beagle Bone is a great IoT device and lightweight K3s make running lightweight Kubernetes on these devices a real possibility.
 The properties of things involved in IoT are as follows:
@@ -21,7 +23,14 @@ A WebSocket is a bi-directional communication protocol which has emerged recentl
 WebSocket communication presents a suitable protocol for the IoT environment where bundles of data are transmitted continuously within multiple devices. A WebSocket makes server and device communication easy. A server needs a WebSocket library to be installed and we need to have the WebSocket client and web browser installed on the client or device that supports WebSocket. The messages are transmitted using binary data that is encoded using JSON.
 Using WebSocket, we won’t have to pool communication data like a conventional API call does. Rather, we can have a real-time push communication setup between the server and the device. We can therefore send and receive high amounts of data in microseconds.
 
-STEPS
+## Dependencies
+1) A Beaglebone Black Board running Linux 
+2) k3s 
+3) Docker 
+4) nginx 
+5) Reliable Network Connection
+
+## Steps
 Build HTML5 Websocket Webpage on Github with Dockerfile that can measure something useful from a Beagle Bone (needs to be scalable) 
 
 Real Time Menu with Ordering for Restaurant Tables w/QR Code Run by BeagleBone
@@ -29,3 +38,7 @@ Step 1 -> Build a html bootstrap webpage with ‘order’ buttons as a GitHub re
 Step 2 -> Install K3s on Beagle Bone
 Step 3 -> Run Dockerfile on K3s
 Demonstrate how K3s expand and contract on the IoT device – easy, simple, cheap!!!!
+
+## Output
+The expected output for this project is a successfully running html5 Websocket page that is deployed using Docker onto k3s.
+The html site should autoscale and self-heal on the k3s.
